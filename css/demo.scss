@@ -1,0 +1,86 @@
+$primary-text-colour: #444;
+$primary-bkg-colour: lightyellow;
+
+body{
+  background-color: $primary-bkg-colour;
+  color: $primary-text-colour;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+
+  $link-colour: red;
+
+  ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+
+    li{
+      padding: 6px 12px;
+    }
+    a {
+      color: $link-colour;
+    }
+  }
+}
+
+// $nav-colour: #036;
+//
+// @for $i from 1 through 3 {
+//   nav li:nth-child(n + #{$a}) {
+//     background-color: lighten($nav-colour, $li * 15%);
+//   }
+// }
+
+%button-template{
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+button{
+  @extend %button-template;
+}
+
+.cat{
+  // @extend %button-template;
+  background-color: cyan;
+}
+
+.dog{
+  // @extend %button-template;
+  background-color: deeppink;
+}
+
+@mixin mywebsitetransformation($property){
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+
+h2{
+  @include mywebsitetransformation(skewX(20deg))
+}
+
+main ul{
+  background-color: darken($primary-bkg-colour, 50%);
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  font: {
+    family: cursive;
+    size: 1.5rem;
+    weight: bold;
+  }
+  border: {
+    width: 3px;
+    style: dotted;
+    radius: 10px;
+  }
+}

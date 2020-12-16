@@ -1,0 +1,46 @@
+body {
+  background-color: lightyellow;
+  color: #444; }
+
+nav {
+  display: flex;
+  justify-content: center; }
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex; }
+    nav ul li {
+      padding: 6px 12px; }
+    nav ul a {
+      color: red; }
+
+button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  cursor: pointer; }
+
+.cat {
+  background-color: cyan; }
+
+.dog {
+  background-color: deeppink; }
+
+h2 {
+  -webkit-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  transform: skewX(20deg); }
+
+main ul {
+  background-color: #e0e000;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-width: 3px;
+  border-style: dotted;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=demo.css.map */
